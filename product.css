@@ -106,6 +106,7 @@ main{
   color: var(--black);
   font-family:med ;
   border: none;
+  border-radius: var(--radius);
 }
 input:focus,
 textarea:focus , select:focus,option:focus{

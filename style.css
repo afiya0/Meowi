@@ -645,7 +645,7 @@ input[type="search"]::-webkit-search-cancel-button {
     padding: 0 20px;
     flex-direction: column;
     align-items: center;
-    /* flex: 0 1 50%; */
+    flex: 1;
   }
   .footer-info {
     flex-direction: column;

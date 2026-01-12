@@ -1,0 +1,168 @@
+/* Fonts */
+@font-face {
+  font-family: amore;
+  src: url(src/font/amore-demo.otf);
+}
+
+@font-face {
+  font-family: reg;
+  src: url(src/font/reg.otf);
+}
+
+@font-face {
+  font-family: ligh;
+  src: url(src/font/ligh.otf);
+}
+
+@font-face {
+  font-family: Baguka;
+  src: url(src/font/Baguka.otf);
+}
+
+@font-face {
+  font-family: med;
+  src: url(src/font/med.otf);
+}
+
+@font-face {
+  font-family: groute;
+  src: url(src/font/Groute.otf);
+}
+
+:root {
+  --lightgreen: #b8bc7f;
+  --lime: #dee679;
+  --lightpink: #fcf8c4;
+  --darkgreen: #2f3216;
+  --white: #fdfcea;
+  --purple: #dedfdf;
+  --black: #1c1c1c;
+  --space: clamp(0.5rem, 1vw, 1.2rem);
+  --radius: 12px;
+}
+
+main {
+  min-height: 100vh !important;
+}
+
+.contact {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info .heading-text {
+  font-family: amore;
+}
+
+.info p {
+  color: var(--darkgreen);
+  font-family: amore;
+  font-weight: 600;
+  font-size: clamp(1em, 2vw, 1.3em);
+}
+
+.n{
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  /* flex-direction: column; */
+  display: flex;
+  gap: 10px;
+}
+
+.name input{
+  padding: 10px;
+  height: 40px;
+  width: 170px;
+}
+
+.formc {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rcon {
+  margin-top: 10px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width:996px) {
+  .contact {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+
+  }
+
+  .name {
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
+
+.formc label {
+  font-family: ligh;
+  /* font-size: clamp(1.1em, 1vw, 2rem); */
+  color: var(--darkgreen);
+}
+.formc input,textarea,select,option{
+  color: var(--black);
+  font-family:med ;
+  border: none;
+}
+.rcon input{
+  padding: 10px;
+}
+
+.formc #msg {
+  resize: none;
+}
+input:focus,
+textarea:focus , select:focus,option:focus{
+  outline: none; 
+ }
+ .formc select,option{ 
+  font-family: ligh; 
+  padding: 10px; 
+  color: white; 
+  background-color: var(--darkgreen); 
+}
+.formc .btn{
+  margin-top: 20px;
+  border: 2px solid var(--darkgreen);
+  height: 50px;
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  text-decoration: none;
+  font-family: ligh;
+  font-weight: 900;
+  border-radius: 30px;
+  /* background-color: var(--darkgreen); */
+  transition: 0.3s ease all;
+}
+.formc .btn:focus{
+  border: none;
+  outline: none;
+}
+.formc .btn:hover{
+background-color: var(--darkgreen);
+color: var(--white);
+}
+.formc input:required{
+  color: var(--black);
+}

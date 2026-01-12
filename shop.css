@@ -1,0 +1,171 @@
+/* Fonts */
+@font-face {
+  font-family: amore;
+  src: url(src/font/amore-demo.otf);
+}
+@font-face {
+  font-family: reg;
+  src: url(src/font/reg.otf);
+}
+@font-face {
+  font-family: ligh;
+  src: url(src/font/ligh.otf);
+}
+@font-face {
+  font-family: Baguka;
+  src: url(src/font/Baguka.otf);
+}
+@font-face {
+  font-family: med;
+  src: url(src/font/med.otf);
+}
+@font-face {
+  font-family: groute;
+  src: url(src/font/Groute.otf);
+}
+
+:root {
+  --lightgreen: #b8bc7f;
+  --lime: #dee679;
+  --lightpink: #fcf8c4;
+  --darkgreen: #2f3216;
+  --white: #fdfcea;
+  --purple: #dedfdf;
+  --black: #1c1c1c;
+  --space: clamp(0.5rem, 1vw, 1.2rem);
+  --radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.shop {
+  background-color: var(--lightpink);
+}
+.products {
+  background-color: var(--lightgreen);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.products .info h1 {
+  margin: 20px;
+  color: var(--darkgreen);
+  font-size: clamp(2em, 5vw, 3em);
+  font-family: Baguka;
+}
+.products .info h1 span {
+  padding: 13px 18px;
+
+  border-radius: 40px;
+  color: var(--lightpink);
+  background-color: var(--darkgreen);
+}
+.products .info p {
+  color: var(--darkgreen);
+  font-family: ligh;
+}.product-img {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 30px;
+  /* background: linear-gradient(180deg, #f9f9f9, #ffffff); */
+}
+
+/* Product Card */
+.product-img .p-images {
+  background-color: var(--lime);
+  border-radius: 22px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+/* Image */
+.p-images img {
+  /* width: 100%; */
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 14px;
+}
+
+/* Product Name */
+.p-images p {
+  margin: 6px 0;
+  font-family: baguka;
+  color: var(--darkgreen);
+}
+
+/* Price */
+.p-images .price {
+  background-color: var(--darkgreen);
+  color: var(--lightpink);
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 14px;
+  margin: 8px 0 12px;
+}
+
+/* Button */
+.p-images a {
+  text-decoration: none;
+}
+
+.p-images i {
+  padding: 12px 20px;
+  background-color: var(--lightgreen);
+  color: var(--darkgreen);
+  border-radius: 50px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Gift banner */
+.product-img .gift {
+  grid-column: span 2;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.gift img {
+  width: 700px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .product-img {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .product-img .gift {
+    grid-column: span 1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .product-img {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .p-images img {
+    height: 200px;
+  }
+}

@@ -1,0 +1,97 @@
+@font-face {
+  font-family: amore;
+  src: url(src/font/amore-demo.otf);
+}
+@font-face {
+  font-family: reg;
+  src: url(src/font/reg.otf);
+}
+@font-face {
+  font-family: ligh;
+  src: url(src/font/ligh.otf);
+}
+@font-face {
+  font-family: Baguka;
+  src: url(src/font/Baguka.otf);
+}
+@font-face {
+  font-family: med;
+  src: url(src/font/med.otf);
+}
+@font-face {
+  font-family: groute;
+  src: url(src/font/Groute.otf);
+}
+
+:root {
+  --lightgreen: #b8bc7f;
+  --lime: #dee679;
+  --lightpink: #fcf8c4;
+  --darkgreen: #2f3216;
+  --white: #fdfcea;
+  --black: #1c1c1c;
+  --purple: #dedfdf;
+
+  --space: clamp(0.5rem, 1vw, 1.2rem);
+  --radius: 12px;
+}
+
+.container {
+  background-color: var(--lightgreen) !important;
+  display: flex;
+  min-height: 100vh !important;
+  margin: 0 auto;
+  padding: 80px 40px; 
+}
+.sidebar{
+  flex: 0 0 35%; 
+  padding-right: 20px;
+}
+
+.page-title {
+  font-size: 5rem;
+  font-weight: 400;
+  margin: 0;
+  font-family: groute;
+  line-height: 1;
+  letter-spacing: -2px; 
+
+}
+.content {
+  flex: 1; 
+}
+
+.faq-item {
+  margin-bottom: 50px; 
+}
+
+.question {
+  font-family: baguka;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 0 15px 0;
+}
+
+.answer {
+  font-family: reg;
+  font-size: 1rem;
+  margin: 0;
+  color: #111; 
+}
+
+      /* Mobile Responsiveness */
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          padding: 40px 20px;
+        }
+
+        .sidebar {
+          margin-bottom: 40px;
+          padding-right: 0;
+        }
+
+        .page-title {
+          font-size: 3.5rem;
+        }
+      }

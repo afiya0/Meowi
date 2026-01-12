@@ -1,0 +1,146 @@
+/* Fonts */
+@font-face {
+  font-family: amore;
+  src: url(src/font/amore-demo.otf);
+}
+
+@font-face {
+  font-family: reg;
+  src: url(src/font/reg.otf);
+}
+
+@font-face {
+  font-family: ligh;
+  src: url(src/font/ligh.otf);
+}
+
+@font-face {
+  font-family: Baguka;
+  src: url(src/font/Baguka.otf);
+}
+
+@font-face {
+  font-family: med;
+  src: url(src/font/med.otf);
+}
+
+@font-face {
+  font-family: groute;
+  src: url(src/font/Groute.otf);
+}
+
+:root {
+  --lightgreen: #b8bc7f;
+  --lime: #dee679;
+  --lightpink: #fcf8c4;
+  --darkgreen: #2f3216;
+  --white: #fdfcea;
+  --purple: #dedfdf;
+  --black: #1c1c1c;
+  --space: clamp(0.5rem, 1vw, 1.2rem);
+  --radius: 12px;
+}
+main{
+  background-color: var(--lightpink  ) !important;
+}
+.products{
+  min-height: 100vh;
+}
+.product{
+    display: flex;
+    justify-content: space-around;
+}
+.product .img{
+  border: 5px solid var(--lime);
+    height: 400px;
+    width: 500px;
+    margin: 10px;
+    border-radius: var(--radius);
+
+}
+.img img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.detail{
+  display: flex;
+  flex-flow: column wrap;
+}
+.info{
+  width: 50%;
+  margin: 30px;
+
+}
+.info h1{
+  color: var(--darkgreen);
+  font-family: baguka;
+  font-size: clamp(2em,2vw,1em);
+}
+.info .price{
+  padding-top: 10px;
+  font: clamp(1.9em,1vw,2em) amore;
+  color: var(--black);
+}
+.info .desc{
+  width: 70%;
+  font: clamp(1em,1vw,2em) ligh;
+}
+
+@media (max-width:996px){
+  .product{
+    flex-direction: column;
+  }
+}
+
+.detail{
+  margin-top: 20px;
+}
+.detail label {
+  font-family: ligh;
+  font-size: clamp(1.1em, 1vw, 2rem);
+  color: var(--black);
+}
+.detail input,textarea,select,option{
+  color: var(--black);
+  font-family:med ;
+  border: none;
+}
+input:focus,
+textarea:focus , select:focus,option:focus{
+  outline: none; 
+ }
+ .detail select,option,input[type="number"]{ 
+  border: 2px solid var(--lime);
+  width: 200px;
+  font-family: ligh; 
+  padding: 10px; 
+  font-size: 20px;
+  color: var(--darkgreen); 
+  /* background-color: var(--darkgreen);  */
+}
+.detail .btn{
+
+  margin-top: 20px;
+  border: 2px solid var(--darkgreen);
+  height: 50px;
+  width: 410px;
+  background-color: transparent;
+  color: var(--black);
+  text-decoration: none;
+  font-family: baguka;
+  border-radius: 30px;
+  transition: 0.3s ease all;
+}
+
+.detail .btn:hover{
+background-color: var(--black);
+color: var(--lightpink);
+}
+.detail input:required{
+  color: var(--black);
+}
+footer{
+  background-color: var(--lime)!important;
+}

@@ -138,3 +138,91 @@ color: var(--lightpink);
 .detail input:required{
   color: var(--black);
 }
+@media (max-width:996px){
+  .product{
+    flex-direction: column;
+  }
+}
+
+.detail{
+  margin-top: 20px;
+}
+.detail label {
+  font-family: ligh;
+  font-size: clamp(1.1em, 1vw, 2rem);
+  color: var(--black);
+}
+.detail input,textarea,select,option{
+  color: var(--black);
+  font-family:med ;
+  border: none;
+  border-radius: var(--radius);
+}
+input:focus,
+textarea:focus , select:focus,option:focus{
+  outline: none; 
+}
+.detail select,option,input[type="number"]{ 
+  border: 2px solid var(--lime);
+  width: 200px;
+  font-family: ligh; 
+  padding: 10px; 
+  font-size: 20px;
+  color: var(--darkgreen); 
+}
+.detail .btn{
+  margin-top: 20px;
+  border: 2px solid var(--darkgreen);
+  height: 50px;
+  width: 410px;
+  background-color: transparent;
+  color: var(--black);
+  text-decoration: none;
+  font-family: baguka;
+  border-radius: 30px;
+  transition: 0.3s ease all;
+}
+
+.detail .btn:hover{
+background-color: var(--black);
+color: var(--lightpink);
+}
+.detail input:required{
+  color: var(--black);
+}
+
+/* --- MOBILE RESPONSIVE ADDITIONS --- */
+
+@media (max-width: 768px) {
+    .product {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .product .img {
+        width: 90%;      /* Image takes full width minus margin */
+        height: 300px;   /* Reduce height slightly for mobile */
+        margin: 0 auto;
+    }
+
+    .info {
+        width: 90%;      /* Text info takes full width */
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .info .desc {
+        width: 100%;     /* Description uses available space */
+    }
+
+    .detail .btn {
+        width: 100%;     /* Buttons become full width for easier tapping */
+        max-width: 410px;
+    }
+
+    .detail select, .detail input[type="number"] {
+        width: 100%;     /* Inputs expand to fit container */
+        box-sizing: border-box;
+    }
+}

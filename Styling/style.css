@@ -243,8 +243,20 @@ input[type="search"]::-webkit-search-cancel-button {
   color: var(--lightgreen);
   font-family: amore;
   word-spacing: 20px;
+    animation: scroll-left 15s linear infinite;
 }
-
+.headline:hover p:hover{
+   animation-play-state: paused;
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    /* Moves the content half its total width to create the infinite loop effect */
+    transform: translateX(-50%);
+  }
+}
 /* Section 2 grid */
 .sec-2 {
   width: clamp(80%, 90vw, 95%);

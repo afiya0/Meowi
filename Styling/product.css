@@ -37,7 +37,7 @@
   --radius: 12px;
 }
 main{
-  background-color: var(--lightpink  ) !important;
+  background-color: var(--purple  ) !important;
 }
 .products{
   min-height: 100vh;

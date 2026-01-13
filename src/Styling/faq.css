@@ -1,28 +1,28 @@
+/* Fonts */
 @font-face {
   font-family: amore;
-  src: url(src/font/amore-demo.otf);
+  src: url(font/amore-demo.otf);
 }
 @font-face {
   font-family: reg;
-  src: url(src/font/reg.otf);
+  src: url(font/reg.otf);
 }
 @font-face {
   font-family: ligh;
-  src: url(src/font/ligh.otf);
+  src: url(font/ligh.otf);
 }
 @font-face {
   font-family: Baguka;
-  src: url(src/font/Baguka.otf);
+  src: url(font/Baguka.otf);
 }
 @font-face {
   font-family: med;
-  src: url(src/font/med.otf);
+  src: url(font/med.otf);
 }
 @font-face {
   font-family: groute;
-  src: url(src/font/Groute.otf);
+  src: url(font/Groute.otf);
 }
-
 :root {
   --lightgreen: #b8bc7f;
   --lime: #dee679;

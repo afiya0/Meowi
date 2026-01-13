@@ -1,37 +1,38 @@
 /* Fonts */
 @font-face {
   font-family: amore;
-  src: url(src/font/amore-demo.otf);
+  src: url(font/amore-demo.otf);
 }
 @font-face {
   font-family: reg;
-  src: url(src/font/reg.otf);
+  src: url(font/reg.otf);
 }
 @font-face {
   font-family: ligh;
-  src: url(src/font/ligh.otf);
+  src: url(font/ligh.otf);
 }
 @font-face {
   font-family: Baguka;
-  src: url(src/font/Baguka.otf);
+  src: url(font/Baguka.otf);
 }
 @font-face {
   font-family: med;
-  src: url(src/font/med.otf);
+  src: url(font/med.otf);
 }
 @font-face {
   font-family: groute;
-  src: url(src/font/Groute.otf);
+  src: url(font/Groute.otf);
 }
-
 :root {
   --lightgreen: #b8bc7f;
   --lime: #dee679;
+  /* --lime:#C7B7D1; */
   --lightpink: #fcf8c4;
   --darkgreen: #2f3216;
   --white: #fdfcea;
-  --purple: #dedfdf;
   --black: #1c1c1c;
+  --purple: #dedfdf;
+
   --space: clamp(0.5rem, 1vw, 1.2rem);
   --radius: 12px;
 }
@@ -42,10 +43,10 @@
   box-sizing: border-box;
 }
 .shop {
-  background-color: var(--lightpink);
+  background-color: var(--lightgreen);
 }
 .products {
-  background-color: var(--lightgreen);
+  background-color: var(--lightpink);
   display: flex;
   align-items: center;
   flex-direction: column;
